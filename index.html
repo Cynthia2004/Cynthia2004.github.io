@@ -7,7 +7,13 @@
   integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
   crossorigin="anonymous"></script>
   <link rel="shortcut icon" href='photos/icon.png'>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
 <title>Hi I'm Cynthia</title>
 <style>
 
@@ -28,16 +34,22 @@ div.relative {
 
 div.yey {
     margin-top: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 50px;
     position: relative;
     text-align: left;
 }
 
 div.coolio {
     margin-top: 10px;
-    margin-bottom: 100px;
+    margin-bottom: 80px;
     position: relative;
     text-align: left;
+}
+
+div.song {
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
 }
 
 #friends {
@@ -188,6 +200,17 @@ a{
 h1{
   font-size: 360%;
 }
+
+/* 600px  */
+@media only screen and (max-width: 600px) {
+  .welcome-section h1 {
+    font-size: 200%;
+  }
+
+  .welcome-section h2 {
+    font-size: 140%;
+  }
+}
 </style>
 </head>
 <body>
@@ -196,10 +219,10 @@ h1{
 
 <div class="yey container">
 
-  <div class="row">
-    <div class="col-5" id="play">
+  <div class="row welcome-section">
+    <div class="col-sm-5" id="play">
     </div>
-    <div class="col-7">
+    <div class="col-sm-7">
       <h1>Welcome!</h1>
       <h2>My name is Cynthia, and this is my website. I am currently a 9th grader in Dwight School Seoul, and
       these are some photos from my life that tells you all about me and who I am. I hope you enjoy learning more about
@@ -209,72 +232,164 @@ h1{
 </div>
 
   <div class="relative container">
-
       <div class="row">
-        <div class="col-3" id="text">
+        <div class="col-md-3" id="text">
           <h1>These</h1>
           <h3>are some <span id="my">cool photos</span> of me.</h3>
         </div>
-        <div class="col-3" id="friends" onmouseover="friends_hover()" onmouseout="no_hover()">
+        <div class="col-4 col-sm-3" id="friends" onmouseover="friends_hover()" onmouseout="no_hover()">
         </div>
-        <div class="col-3" id="amy" onmouseover="amy_hover()" onmouseout="no_hover()">
+        <div class="col-4 col-sm-3" id="amy" onmouseover="amy_hover()" onmouseout="no_hover()">
         </div>
-        <div class="col-3" id="broskis" onmouseover="broskis_hover()" onmouseout="no_hover()">
+        <div class="col-4 col-sm-3" id="broskis" onmouseover="broskis_hover()" onmouseout="no_hover()">
         </div>
       </div>
 
       <div class="row">
-        <div class="col-3" id="jin" onmouseover="jin_hover()" onmouseout="no_hover2()">
+        <div class="col-4 col-sm-3" id="jin" onmouseover="jin_hover()" onmouseout="no_hover2()">
         </div>
-        <div class="col-3" id="word">
+        <div class="col-md-3" id="word">
           <h1> Here...</h1>
           <h3> are some<span id="my"> more</span> things about me.</h3>
         </div>
-        <div class="col-3" id="abby" onmouseover="abby_hover()" onmouseout="no_hover2()">
+        <div class="col-4 col-sm-3" id="abby" onmouseover="abby_hover()" onmouseout="no_hover2()">
         </div>
-        <div class="col-3" id="weird" onmouseover="weird_hover()" onmouseout="no_hover2()">
+        <div class="col-4 col-sm-3" id="weird" onmouseover="weird_hover()" onmouseout="no_hover2()">
         </div>
       </div>
-
-    <div class="row">
-      <div class="col-3" id="carnegie" onmouseover="carnegie_hover()" onmouseout="no_hover3()">
-      </div>
-      <div class="col-3" id="mun" onmouseover="mun_hover()" onmouseout="no_hover3()">
-      </div>
-      <div class="col-3" id="vocab">
-        <h1>These</h1>
-        <h3> are my<span id="my"> photos</span> from school and extracurricular activities.</h3>
-      </div>
-      <div class="col-3" id="drama" onmouseover="drama_hover()" onmouseout="no_hover3()">
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-3" id="xc" onmouseover="xc_hover()" onmouseout="no_hover4()">
-      </div>
-      <div class="col-3" id="cello" onmouseover="cello_hover()" onmouseout="no_hover4()">
-      </div>
-      <div class="col-3" id="rock" onmouseover="rock_hover()" onmouseout="no_hover4()">
-      </div>
-      <div class="col-3" id="yey">
-        <h1>Here</h1>
-        <h2> are some of my<span id="my"> hobbies</span> and interests.</h2>
-      </div>
-    </div>
-    </div>
-
-    <div class="coolio container">
 
       <div class="row">
+        <div class="col-3" id="carnegie" onmouseover="carnegie_hover()" onmouseout="no_hover3()">
+        </div>
+        <div class="col-3" id="mun" onmouseover="mun_hover()" onmouseout="no_hover3()">
+        </div>
+        <div class="col-3" id="vocab">
+          <h1>These</h1>
+          <h3> are my<span id="my"> photos</span> from school and extracurricular activities.</h3>
+        </div>
+        <div class="col-3" id="drama" onmouseover="drama_hover()" onmouseout="no_hover3()">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-4 col-sm-3" id="xc" onmouseover="xc_hover()" onmouseout="no_hover4()">
+        </div>
+        <div class="col-4 col-sm-3" id="cello" onmouseover="cello_hover()" onmouseout="no_hover4()">
+        </div>
+        <div class="col-4 col-sm-3" id="rock" onmouseover="rock_hover()" onmouseout="no_hover4()">
+        </div>
+        <div class="col-md-3" id="yey">
+          <h1>Here</h1>
+          <h2> are some of my<span id="my"> hobbies</span> and interests.</h2>
+        </div>
+      </div>
+  </div>
+
+    <div class="coolio container">
+      <div class="row">
         <div class="col-12" id="laugh">
-          <h1>Have Fun!</h1>
-          <a href='https://www.youtube.com/watch?v=SBeYzoQPbu8'>my favorite video on the whole internet</a>
+          <h1><span class="glyphicon glyphicon-sunglasses" aria-hidden="true"></span> Have Fun</h1>
+          <center><a href='https://www.youtube.com/watch?v=SBeYzoQPbu8' target='blank'> my favorite video on the whole internet</a></center>
+          <center><a href='https://www.youtube.com/watch?v=q6EoRBvdVPQ&list=PLFsQleAWXsj_4yDeebiIADdH5FMayBiJo'target='blank'> yeee</a></center>
+          <center><a href='https://www.youtube.com/watch?v=cuNhfSM-144&index=4&list=PLFsQleAWXsj_4yDeebiIADdH5FMayBiJo'target='blank'> pretty dang funny I would say</a></center>
+          <center><a href='https://www.youtube.com/watch?v=VV5JOQyUYNg'target='blank'> such a good drum fill</a></center>
+          <center><a href='https://www.youtube.com/watch?v=8YWl7tDGUPA&index=2&list=PLFsQleAWXsj_4yDeebiIADdH5FMayBiJo'target='blank'> blue</a></center>
         </div>
       </div>
     </div>
 
+    <div class="song">
+        <h1 style="margin-bottom: 50px">My Favorite Song (at the moment)</h1>
+        <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/I3mrYxPLSH4" frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+      </div>
+
+  <h1 style="margin-bottom: 50px; text-align: center;">Facts about Me</h1>
+<div class="row" style="margin-bottom: 60px">
+  <div class="col-2"></div>
+  <div class="col-8">
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Favorite movie?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+          My favorite movie is The Proposal with Ryan Reynolds and Sandra Bullock.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Favorite song at the moment?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+          My favorite song at this moment is All My Friends by Snakehips.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Do you play any instruments?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+          I play the cello, and I have played it for almost 6 years.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Do you play any sports?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+          I play/do three sports: tennis, running, swimming.
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Favorite food?
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+          My favorite foods are Vietnamese pho and chicken wings. (every kind)
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="col-2"></div>
+</div>
 
 <script>
+
+// $('.collapse').collapse();
+
 var t = document.getElementById('text');
 function friends_hover() {
   t.innerHTML = '<h2>Hi, these are my friends.</h2>';
